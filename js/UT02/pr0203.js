@@ -1,0 +1,12 @@
+let precioManzanas = parseInt(prompt("Indica el precio por kilos de manzanas"));
+let kilosMazanas = parseInt(prompt("Indica los kilos de manzana"));
+let totalManzanas = kilosMazanas*precioManzanas;
+let precioNaranjas = parseInt(prompt("Indica el precio por kilos de naranjas"));
+let kilosNaranjas = parseInt(prompt("Indica los kilos de naranjas"));
+let totalNaranjas = kilosNaranjas*precioNaranjas;
+let precioPlatanos = parseInt(prompt("Indica el precio por kilos de platanos"));
+let kilosPlatanos = parseInt(prompt("Indica los kilos de platanos"));
+let totalPlatanos = kilosPlatanos*precioPlatanos;
+let totalKilos = kilosMazanas + kilosNaranjas + kilosPlatanos;
+let totalPrecio = totalManzanas + totalNaranjas + totalPlatanos;
+console.log(`Has comprado un total de ${totalKilos} kilos de fruta y te ha costado ${totalPrecio} euros`);
