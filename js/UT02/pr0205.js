@@ -7,7 +7,6 @@ do {
         bucle = 2;
     } else {
         alert("No has introducido un número");
-        numero = parseInt(prompt("Introduce un número"));
         bucle = 1;
     }
 } while(bucle==1);
