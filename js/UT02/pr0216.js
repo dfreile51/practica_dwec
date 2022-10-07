@@ -1,25 +1,30 @@
 let covertToBytes = (capacity, from) => {
     let resultado = 0;
-    if(from == "KB" || "Kilobyte") {
-        resultado = capacity * 1000;
-        return resultado;
-    } else if (from == "MB" || "Megabyte") {
-        resultado = capacity * 1000000;
-        return resultado;
-    } else if (from == "GB" || "Gigabyte") {
-        resultado = capacity * 1000000000;
-        return resultado;
-    } else if (from == "TB" || "Terabyte") {
-        resultado = capacity * 1000000000000;
-        return resultado;
-    } else if (from == "PB" || "Petabyte") {
-        resultado = capacity * 1000000000000000;
-        return resultado;
-    } else if (from == "EB" || "Exabyte") {
-        resultado = capacity * 1000000000000000000;
-        return resultado;
-    } else {
-        alert("Has introducido mal la unidad de medida");
+    switch(from) {
+        case 'Kilobyte':
+        case 'KB':
+            resultado = capacity * 1e3;
+            break;
+        case 'Megabyte':
+        case 'MB':
+            resultado = capacity * 1e6;
+            break;
+        case 'Gigabyte':
+        case 'GB':
+            resultado = capacity * 1e9;
+            break;
+        case 'Terabyte':
+        case 'TB':
+            resultado = capacity * 1e12;
+            break;
+        case 'Petabyte':
+        case 'PB':
+            resultado = capacity * 1e15;
+            break;
+        case 'Exabyte':
+        case 'EB':
+            resultado = capacity * 1e18;
+            break;        
     }
     return resultado;
 }

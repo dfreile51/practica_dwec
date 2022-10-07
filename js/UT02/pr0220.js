@@ -11,8 +11,8 @@ let getFibonacciAt = (n) => {
         previousFib = currentFib;
         currentFib = newFib;
     }
-
     return currentFib;
+    
 }
 
 let num = parseInt(prompt("Introduzca un número"));

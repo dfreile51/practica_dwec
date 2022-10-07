@@ -1,5 +1,5 @@
 let calc = (operando1, operando2, operador) => {
-    let resultado = "";
+    let resultado = 0;
     if(operador == "+"){
         resultado = operando1 + operando2;
     } else if(operador == "-") {
