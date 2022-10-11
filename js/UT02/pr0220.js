@@ -6,7 +6,7 @@ let getFibonacciAt = (n) => {
     let previousFib = 0;
     let currentFib = 1;
 
-    for(let i = 0; i < n - 1; i++) {
+    for(let i = 2; i < n; i++) {
         let newFib = previousFib + currentFib;
         previousFib = currentFib;
         currentFib = newFib;
