@@ -9,10 +9,10 @@ let user2 = {
 };
 
 
-let intersectObjects = (obj,obj1) => {
-   let int = {}
-   for(let key in obj){
-    if(key in obj1){
+let intersectObjects = (obj1,obj2) => {
+   let int = {};
+   for(let key in obj1){
+    if(key in obj2){
         int[key]=0;
     }
    }

@@ -10,11 +10,10 @@ let credentials = {
 }
 
 let mergeObjects = ( a,b ) => {
-    let login = {
-        name: user.username,
-        pass: credentials.passwd,
-    }
-    return login;
+    return {
+        ...a,
+        ...b
+    };
 }
 
 console.log(mergeObjects(nombre,contrasena));

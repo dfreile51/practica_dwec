@@ -5,7 +5,10 @@ let user = {
 }
 
 let cloneObject = ( a ) => {
-    clonUser = a;
+    let clonUser = {};
+    for(let k in a) {
+        clonUser[k] = a[k];
+    }
     return clonUser;
 }
 

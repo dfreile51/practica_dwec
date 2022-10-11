@@ -9,15 +9,12 @@ let usuario2 = {
 }
 
 let containsObject  = ( a,b ) => {
-    /*
-    for(let key in obj) {
-        if(key in a) {
+    for(let key in b) {
+        if(!(key in a)) {
             return false;
-        } else {
-            return true;
         }
     }
-    */
+    return true;
 }
 
 console.log(containsObject(usuario1,usuario2));
