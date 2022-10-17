@@ -4,12 +4,15 @@ let person = {
 }
 
 let removeUndefined = (a) => {
-    /*
-    let clon = Object.assign( {},a );
-    delete clon.name;
-    delete clon.surname;
-    return clon;
-    */
+    let b = {};
+
+    for (let key in a) {
+        if (a[key] != undefined) {
+            b[key] = a[key];
+        }
+    }
+    return b;
+
 }
 
 console.log(removeUndefined(person));

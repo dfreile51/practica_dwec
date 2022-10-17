@@ -1,5 +1,5 @@
 let nombre = prompt("Introduzca su nombre");
-let contrasena = prompt("Introduzca su sontraseña");
+let contrasena = prompt("Introduzca su contraseña");
 
 let user = {
     username: nombre,
