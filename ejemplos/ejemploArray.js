@@ -33,7 +33,7 @@ console.log(arr2); */
 
 //EJEMPLO arr.sort
 
-let arr = [
+/* let arr = [
     {nombre: 'Diego', ap: 'Freile'},
     { nombre:'Luis', ap: 'Fernández'},
     {nombre: 'Pepe', ap: 'Pérez'}
@@ -46,4 +46,12 @@ arr.sort( (a, b) => {
     //-1 si a<b
 } );
 
-console.log(arr);
+console.log(arr); */
+
+// EJEMPLO DE reduce
+
+let arr = [ 'Victor', 'González', 'Rodríguez' ];
+
+let b = arr.reduce( (acum, item) => acum + item.slice(0, 2).toLowerCase(), '' );
+
+console.log(b);

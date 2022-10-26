@@ -1,10 +1,10 @@
 let generateUsername = ( arr ) => {
-    arr.forEach(item => {
-        item.nickname = item.name.slice(0, 1).toLowerCase()+item.surname.toLowerCase()
-                      + Math.trunc(Math.random() * (9) + 1)
-                      + Math.trunc(Math.random() * (9) + 1);
+    arr.forEach( item => {
+        item.nickname = (item.name.charAt(0)+item.surname).toLowerCase()
+                      + Math.trunc(Math.random() * 10).toString()
+                      + Math.trunc(Math.random() * 10).toString();
     });
-    console.log(arr);
+    return arr;
 };
 
 let array1 = [
