@@ -29,12 +29,12 @@ let array1 = [
     }
 ]
 
+let nombreCompleto = [];
+
 let getAlumnosCiclo = ( str ) => {
-    array1.forEach(item => {
-        if(item.ciclo[str] == str) {
-            return item.nombre+" "+ item.ape1+" "+item.ape2;
-        }
-    });
+    array1.filter(item => item.ciclo==str)
+          .forEach(item => nombreCompleto.push(item.nombre+" "+item.ape1+" "+item.ape2));
+    return nombreCompleto;
 };
 
 console.log(getAlumnosCiclo('DAW'));

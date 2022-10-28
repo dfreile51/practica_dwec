@@ -10,7 +10,7 @@ let array1 = [
         notas: {
             DWEC: 7.8,
             DIW: 5.4,
-            DWEC: 9.4
+            DWES: 9.4
         }
     },
     {
@@ -32,7 +32,7 @@ let array1 = [
 let getAverageGrade = ( str ) => {
     let media = 0;
     let cont = 0;
-    array1.forEach(item => {
+    array1.forEach( item => {
         media += item.notas[str];
         cont++;
     });

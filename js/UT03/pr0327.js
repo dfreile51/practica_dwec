@@ -10,7 +10,7 @@ let array1 = [
         notas: {
             DWEC: 7.8,
             DIW: 5.4,
-            DWEC: 9.4
+            DWES: 9.4
         }
     },
     {
@@ -29,14 +29,8 @@ let array1 = [
     }
 ]
 
-let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
-
-let addNif = ( arr ) => {
-    arr.forEach( item => {
-        item.nif = item.dni+letras[item.dni%23];
-        delete item.dni;
-    });
-    return arr;
+let getAlumnosCiclo = ( str ) => {
+    return array1.filter(item => item.ciclo==str).length;
 };
 
-console.log(addNif(array1));
+console.log(getAlumnosCiclo('DAW'));

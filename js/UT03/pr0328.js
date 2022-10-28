@@ -10,7 +10,7 @@ let array1 = [
         notas: {
             DWEC: 7.8,
             DIW: 5.4,
-            DWEC: 9.4
+            DWES: 9.4
         }
     },
     {
@@ -29,14 +29,13 @@ let array1 = [
     }
 ]
 
-let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+let usernames = [];
 
-let addNif = ( arr ) => {
-    arr.forEach( item => {
-        item.nif = item.dni+letras[item.dni%23];
-        delete item.dni;
+let getUsernames = ( ) => {
+    array1.forEach( item => {
+        usernames.push((item.nombre+item.ape1.charAt(0)+item.ape2.charAt(0)).toLowerCase());
     });
-    return arr;
+    return usernames;
 };
 
-console.log(addNif(array1));
+console.log(getUsernames(array1));;

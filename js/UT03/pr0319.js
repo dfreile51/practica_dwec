@@ -11,3 +11,10 @@ let max = ( arr ) => {
 };
 
 console.log(max(numbers));
+
+/* function max (arr) {
+    let max = arr.reduce(acum, item => {
+        return (item>acum) ? item : acum;
+    }, arr[0]);
+    return max;
+} */

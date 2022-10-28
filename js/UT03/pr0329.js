@@ -27,16 +27,23 @@ let array1 = [
             DWES: 4
         }
     }
-]
+];
 
-let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+let media = (obj) => {
+    suma = 0;
+    numElements = 0;
 
-let addNif = ( arr ) => {
-    arr.forEach( item => {
-        item.nif = item.dni+letras[item.dni%23];
-        delete item.dni;
+    for(key in obj) {
+        suma += obj[key];
+        numElements++;
+    }
+    return suma/numElements;
+}
+
+let getAverages = () => {
+    return array1.map( item => {
+        return`alumno: ${item.nombre} ${item.ape1} ${item.ape2}, expediente: ${item.expediente}, nota_media: ${Math.round(media(item.notas))}`;
     });
-    return arr;
-};
+}
 
-console.log(addNif(array1));
+console.log(getAverages());

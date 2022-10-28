@@ -27,16 +27,21 @@ let array1 = [
             DWES: 4
         }
     }
-]
+];
 
-let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+let comprobarCadena = (str) => {
+    for(let i = 0; i < str.length; i++) {
+        if((str[i] == str[i].toUpperCase() && !Number.isInteger(Number(str[i]))) && (str[i] == str[i].toLowerCase()) && (Number.isInteger(Number(str[i])))) {
+            return true;
+        }
+    }
+    return false;
+}
 
-let addNif = ( arr ) => {
-    arr.forEach( item => {
-        item.nif = item.dni+letras[item.dni%23];
-        delete item.dni;
-    });
-    return arr;
+let getUnsecurePass = () => {
+    array1.filter( item => {
+        return !(item.pass.length >= 8 && comprobarCadena(item.pass));
+    }).map(item => item.nombre+" "+item.ape1+" "+item.ape2);
 };
 
-console.log(addNif(array1));
+console.log(getUnsecurePass());

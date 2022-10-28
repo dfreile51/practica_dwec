@@ -21,7 +21,7 @@ console.log(arr); */
 
 // EJEMPLO arr.map
 
-/* let arr = [
+let arr = [
     {nombre: 'Diego', ap: 'Freile'},
     {nombre: 'Pepe', ap: 'Perez'}
 ];
@@ -29,7 +29,7 @@ console.log(arr); */
 let arr2 = arr.map( item => `${item.nombre} ${item.ap}` );
 
 console.log(arr);
-console.log(arr2); */
+console.log(arr2);
 
 //EJEMPLO arr.sort
 
@@ -50,8 +50,8 @@ console.log(arr); */
 
 // EJEMPLO DE reduce
 
-let arr = [ 'Victor', 'González', 'Rodríguez' ];
+/* let arr = [ 'Victor', 'González', 'Rodríguez' ];
 
 let b = arr.reduce( (acum, item) => acum + item.slice(0, 2).toLowerCase(), '' );
 
-console.log(b);
+console.log(b); */
