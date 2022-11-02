@@ -29,8 +29,16 @@ let array1 = [
     }
 ]
 
-let getAlumnosCiclo = ( str ) => {
-    return array1.filter(item => item.ciclo==str).length;
-};
+/* let getAlumnosCiclo = ( str ) => {
+    return array1.filter( ({ciclo}) => ciclo==str)
+                 .length;
+}; */
 
+let getAlumnosCiclo = ( str ) => {
+    return array1.reduce((acum, {ciclo}) => {
+        if(ciclo == str) {
+            return ++acum;
+        }
+    }, 0);
+};
 console.log(getAlumnosCiclo('DAW'));

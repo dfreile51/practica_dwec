@@ -29,12 +29,9 @@ let array1 = [
     }
 ]
 
-let nombreCompleto = [];
-
 let getAlumnosCiclo = ( str ) => {
-    array1.filter(item => item.ciclo==str)
-          .forEach(item => nombreCompleto.push(item.nombre+" "+item.ape1+" "+item.ape2));
-    return nombreCompleto;
+    return array1.filter(item => item.ciclo==str)
+                 .map(({nombre, ape1, ape2}) => `${nombre} ${ape1} ${ape2}`);
 };
 
 console.log(getAlumnosCiclo('DAW'));

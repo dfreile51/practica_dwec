@@ -5,7 +5,7 @@ let array1 = [
         ape2: 'López',
         dni: '10100100',
         expediente: '1720',
-        pass: '1234ABC',
+        pass: 'aaaaABCC1',
         ciclo: 'DAW',
         notas: {
             DWEC: 7.8,
@@ -19,7 +19,7 @@ let array1 = [
         ape2: 'Hernández',
         dni: '7340831',
         expediente: '342',
-        pass: 'P@ssw0rd',
+        pass: 'Passw0rd',
         ciclo: 'DAW',
         notas: {
             DWEC: 8,
@@ -31,7 +31,7 @@ let array1 = [
 
 let comprobarCadena = (str) => {
     for(let i = 0; i < str.length; i++) {
-        if((str[i] == str[i].toUpperCase() && !Number.isInteger(Number(str[i]))) && (str[i] == str[i].toLowerCase()) && (Number.isInteger(Number(str[i])))) {
+        if((str[i] == str[i].toUpperCase()) && (str[i] == str[i].toLowerCase()) && (Number.isInteger(Number(str[i])))) {
             return true;
         }
     }
@@ -39,7 +39,7 @@ let comprobarCadena = (str) => {
 }
 
 let getUnsecurePass = () => {
-    array1.filter( item => {
+    return array1.filter( item => {
         return !(item.pass.length >= 8 && comprobarCadena(item.pass));
     }).map(item => item.nombre+" "+item.ape1+" "+item.ape2);
 };

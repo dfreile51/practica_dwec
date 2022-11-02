@@ -42,7 +42,7 @@ let media = (obj) => {
 
 let getAverages = () => {
     return array1.map( item => {
-        return`alumno: ${item.nombre} ${item.ape1} ${item.ape2}, expediente: ${item.expediente}, nota_media: ${Math.round(media(item.notas))}`;
+        return `alumno: ${item.nombre} ${item.ape1} ${item.ape2}, expediente: ${item.expediente}, nota_media: ${Math.round(media(item.notas))}`;
     });
 }
 
