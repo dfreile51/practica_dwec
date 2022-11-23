@@ -1,0 +1,20 @@
+table{
+    border-collapse: collapse;
+    background-color: lightgray;
+    border:3px solid lightgray;
+}
+td{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+}
+.negra{
+    background-color: black;
+    cursor: pointer;
+}
+.blanca{
+    background-color: white;
+    cursor: pointer;
+}
