@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pr0509.css">
+    <title>PR0509: Formularios (III)</title>
+</head>
+<body>
+    <div id="fondo" class="invisible">
+        <div id="ventana" class="invisible">
+            <div class="modal-header">
+                <button id="cerrar"><img src="img/cruz.png" alt="cruz.png" class="cerrar"></button>
+                <nav class="nav-modal">
+                    <button id="login">login</button>
+                    <button id="register">register</button>
+                </nav>
+            </div>
+            <div class="modal-container">
+                <form action="#" method="post" id="iniciar-sesion">
+                    <label for="email">Email: </label>
+                    <br/>
+                    <input type="text" name="email" id="email1" class="inputs" />
+                    <br/>
+                    <label for="pass">Password: </label>
+                    <br/>
+                    <input type="password" name="pass" id="pass1" class="inputs" />
+                    <br/>
+                    <input type="button" value="Inciar Sesion" id="buttonIniciar" disabled />
+                    <!-- <button id="buttonIniciar" disabled>Iniciar Sesión</button> -->
+                    <div id="divEmail1"></div>
+                    <div id="divPass1"></div>
+                </form>
+
+                <form action="#" method="post" class="invisible" id="registro">
+                    <label for="email">Email: </label>
+                    <br/>
+                    <input type="text" name="email" id="email2" class="inputs" />
+                    <br/>
+                    <label for="pass">Password: </label>
+                    <br/>
+                    <input type="password" name="pass" id="pass2" class="inputs" />
+                    <br/>
+                    <label for="repPass">Repeat password: </label>
+                    <br/>
+                    <input type="password" name="repPass" id="repPass" class="inputs" />
+                    <br/>
+                    <input type="button" value="Registrarse" id="buttonRegister" disabled />
+                    <div id="divEmail2"></div>
+                    <div id="divPass2"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <button id="botonMostrarModal">Login - Registration Modal</button>
+    
+    
+    <script src="../js/UT05/pr0509.js"></script>
+</body>
+</html>

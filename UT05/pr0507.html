@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR0507: Formularios (I)</title>
+</head>
+<style>
+    .invalid {
+        border-color: red;
+    }
+    #error { 
+        color: red
+    }
+</style>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="#" method="post">
+        <label for="email">Correo Electrónico:</label>
+        <br><br>
+        <input type="text" name="email" id="email" />
+        <br><br>
+        <label for="pass">Contraseña:</label>
+        <br><br>
+        <input type="password" name="pass" id="pass" />
+        <br><br>
+        <label for="pass">Repetir Contraseña:</label>
+        <br><br>
+        <input type="password" name="repPass" id="repPass" />
+        <br><br>
+        <input type="button" value="Enviar" id="botonEnviar" />
+    </form>
+    <br>
+    <div id="security"></div>
+    <div id="error"></div>
+    <script src="../js/UT05/pr0507.js"></script>
+</body>
+</html>

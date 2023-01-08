@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.inputs {
+    width: 250px;
+    height: 23px;
+    display: block;
+    margin-bottom: 1px;
+}
+
+.nav-modal>button:hover {
+    background-color: lightgray;
+    color: blue;
+}
+
+.nav-modal>button {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-container{
+    margin: 1em;
+}
+
+#cerrar {
+    width: 28px;
+    height: 28px;
+    padding: 0.15em 0em;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
+.cerrar:hover {
+    filter: opacity(0.4);
+}
+
+.cerrar {
+    width: 24px;
+    height: 24px;
+}
+
+.invisible {
+    display: none;
+}
+
+.formulario {
+    position: absolute;
+    display: block;
+    background-color: white;
+    border-radius: 6px;
+    top: 40px;
+}
+
+.fondo {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
